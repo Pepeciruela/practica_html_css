@@ -1,0 +1,65 @@
+:root {
+    --background: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: var(--background);
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    padding: 30px 0px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 200px; 
+}
+
+header nav a {
+    color: #aaa;
+    text-decoration: none; /*Quitar el subrayado*/
+    margin-right: 15px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+header nav a.active{
+    color: #fff;
+}
+
+/*Código para la película principal*/
+.pelicula-portada {
+    font-size: 16px;
+    min-height: 40.62em;
+    color:#fff;
+    background: linear-gradient(rgba(0,0,0,.15)0%, rgba(0,0,0,.50) 100%) , url(../img/inicio.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pelicula-portada .container{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
