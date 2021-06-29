@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.pagina-registro{
+    background-image: linear-gradient(rgba(0,0,0,.15)0%, rgba(0,0,0,.50) 100%) , url(../img/inicio.jpg);
+}
