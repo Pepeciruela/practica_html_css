@@ -13,7 +13,6 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-
 .container{
     width: 100%;
     margin: auto;
@@ -24,10 +23,9 @@ header{
     position:fixed;
     background: var(--background);
     width: 100%;
-
 }
 
-header .container-nav {
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,13 +35,17 @@ header .logo {
     width: 200px; 
 }
 
+header nav ul{
+    display:flex;
+}
+
 header nav a {
     color: #aaa;
     text-decoration: none; /*Quitar el subrayado*/
     margin-right: 15px;
 }
 
-header nav a.cerrar:hover{
+header nav ul a.cerrar:hover{
     color: #f00;
 }
 
