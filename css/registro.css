@@ -1,10 +1,71 @@
+:root {
+    --background: #141414;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    font-family: 'Lato', sans-serif;
 }
 
-.pagina-registro{
-    background-image: linear-gradient(rgba(0,0,0,.15)0%, rgba(0,0,0,.50) 100%) , url(../img/inicio.jpg);
+.principal {
+    background: var(--background);
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(rgba(0,0,0,.15)0%, rgba(0,0,0,.50) 100%) , url(../img/fondo_caballeros.jpg);
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.logo {
+    width: 200px;
+    padding: 1.25em;
+}
+
+.registro{
+    background-color:#273746;
+    border-radius: 8px;
+    color:#fff;
+    font-size: 16px;
+    margin: 2.5em auto 6.25em;
+    padding: 4.37em 3.75em 9.37em;
+    width: 450px;
+}
+
+.registro h2{
+    font-size: 30px;
+    margin: 0 0 1em;  
+}
+
+.registro input{
+    display:block; /* cada elemento ocupa su espacio correspondiente*/
+    color:#fff;
+    font-size: 16px;
+    width: 100%;
+    height: 3.125em;
+    border-radius: 0.5em;
+    border: none;
+}
+
+#nombre{
+    background-color:#566573;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 1.25em;
+    padding: 0 1.25em;  
+}
+
+#password{
+    background-color:#566573;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 1.25em;
+    padding: 0 1.25em;  
+}
+
+#submit{
+    background-color: red;
+    font-size: 16px;
+    margin-top: 2.5em;
+    cursor: pointer;
 }
