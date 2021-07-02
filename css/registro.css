@@ -28,8 +28,9 @@
     color:#fff;
     font-size: 16px;
     margin: 2.5em auto 6.25em;
-    padding: 4.37em 3.75em 9.37em;
+    padding: 4.37em 3.75em 4.37em;
     width: 450px;
+    display:block;
 }
 
 .registro h2{
@@ -52,7 +53,7 @@
     font-size: 16px;
     outline: none;
     margin-bottom: 1.25em;
-    padding: 0 1.25em;  
+    padding: 0 1em;  
 }
 
 #password{
@@ -60,7 +61,7 @@
     font-size: 16px;
     outline: none;
     margin-bottom: 1.25em;
-    padding: 0 1.25em;  
+    padding: 0 1em; 
 }
 
 #submit{
@@ -68,4 +69,14 @@
     font-size: 16px;
     margin-top: 2.5em;
     cursor: pointer;
+    padding: 0 1em 0 1em; 
+}
+
+.registro .ayuda .Nayuda a{
+    color:#fff;
+    font-size: 13 px;
+    padding: 0;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1em;
 }
