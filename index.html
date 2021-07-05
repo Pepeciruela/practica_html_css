@@ -4,76 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/peliculas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <title>Monty Python</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/peliculas.css">
 </head>
 <body>
     <header>
-        <nav class="container">
-            <img src="img/logo.png" alt="logo" class= "logo" draggable="false">
-            <ul class="lista-nav">
-                <li class="item-nav"><a href="#" class="active">Inicio</a></li>
-                <li class="item-nav"><a href="#">Novedades</a></li>
-                <li class="item-nav"><a href="#">Películas</a></li>
-                <li class="item-nav"><a href="#">Favoritos</a></li>
-                <li class="item-nav"><a href="#">Búsqueda</a></li>
-                <li class="item-nav"><a href="#" class="cerrar">Cerrar sesión</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="pelicula-portada">
-            <div class="container">
-                <h3 class=title>Los caballeros de la mesa cuadrada</h3>
-                <p class="description">El rey Arturo y sus caballeros reciben un encargo divino: partir en búsqueda del Santo Grial, para lo cual deberán luchar contra enemigos muy diversos: malignos caballeros rivales, bestias sanguinarias (que solo son visibles como dibujo animado), groseros caballeros franceses fortificando un castillo en Inglaterra, brujas, adivinos mefistofélicos, Scotland Yard, y hasta un conejo asesino y carnívoro (que muere destruido por una cómica reliquia traída de las Cruzadas: la "Santa Granada de Mano de Antioquia").</p>
-                <button role="button" class="button"><i class="fas fa-play"></i>Reproducir</button>
-                <button role="button" class="button"><i class="fas fa-info-circle"></i>Más información</button>
-            </div>    
-        </div>
-    </main>
-        <div class="lista-peliculas">
-            <h2>Popular en Monty Python</h2>
-            <div class="listap">
-                <img src="img/mesa_cuadrada.jpg" alt="mesa_cuadrada" class="poster-cartelera">
-                <img src="img/vida_brian.jpg" alt="vida_brian" class="poster-cartelera">
-                <img src="img/sentido_vida.jpg" alt="sentido_vida" class="poster-cartelera">
-                <img src="img/mesa_cuadrada.jpg" alt="mesa_cuadrada" class="poster-cartelera">
-                <img src="img/vida_brian.jpg" alt="vida_brian" class="poster-cartelera">
-                <img src="img/sentido_vida.jpg" alt="sentido_vida" class="poster-cartelera">
-                <img src="img/mesa_cuadrada.jpg" alt="mesa_cuadrada" class="poster-cartelera">
-                <img src="img/vida_brian.jpg" alt="vida_brian" class="poster-cartelera">
-                <img src="img/sentido_vida.jpg" alt="sentido_vida" class="poster-cartelera">
-                <img src="img/mesa_cuadrada.jpg" alt="mesa_cuadrada" class="poster-cartelera">
-                <img src="img/vida_brian.jpg" alt="vida_brian" class="poster-cartelera">
-                <img src="img/sentido_vida.jpg" alt="sentido_vida" class="poster-cartelera">
+        <nav class="barra-navegacion">
+            <div class="logo-navegacion">
+                <img src="img/logo.png" alt="logo">
             </div>
-        </div>
-        <div class="lista-peliculas">
-            <h2>Estrenos</h2>
-            <div class="listap">
-                <img src="img/mesa_cuadrada.jpg" alt="mesa_cuadrada" class="poster-cartelera">
-                <img src="img/vida_brian.jpg" alt="vida_brian" class="poster-cartelera">
-                <img src="img/sentido_vida.jpg" alt="sentido_vida" class="poster-cartelera">
-                <img src="img/mesa_cuadrada.jpg" alt="mesa_cuadrada" class="poster-cartelera">
-                <img src="img/vida_brian.jpg" alt="vida_brian" class="poster-cartelera">
-                <img src="img/sentido_vida.jpg" alt="sentido_vida" class="poster-cartelera">
+            <div class="navegador-navegacion">
+                <ul>
+                    <li class="seleccionado"><a href="#"></a>Inicio</li>
+                    <li class="no-seleccionado"><a href="#"></a>Series</li>
+                    <li class="no-seleccionado"><a href="#"></a>Películas</li>
+                    <li class="no-seleccionado"><a href="#"></a>Más recientes</li>
+                    <li class="no-seleccionado"><a href="#"></a>Mi lista</li>
+                    <li class="cerrar-sesion"><a href="#"></a>Cerrar sesión</li>
+
+                </ul>
             </div>
-        </div>
-            <div class="lista-peliculas">
-                <h2>Comedias</h2>
-                <div class="listap">
-                    <img src="img/mesa_cuadrada.jpg" alt="mesa_cuadrada" class="poster-cartelera">
-                    <img src="img/vida_brian.jpg" alt="vida_brian" class="poster-cartelera">
-                    <img src="img/sentido_vida.jpg" alt="sentido_vida" class="poster-cartelera">
-                    <img src="img/mesa_cuadrada.jpg" alt="mesa_cuadrada" class="poster-cartelera">
-                    <img src="img/vida_brian.jpg" alt="vida_brian" class="poster-cartelera">
-                    <img src="img/sentido_vida.jpg" alt="sentido_vida" class="poster-cartelera">
+            <div class="menu-navegacion">
+                <img class="icono" src="icons/search-solid.svg" alt="search">
+                <img class="icono" src="icons/gift-solid.svg" alt="gift">
+                <img class="icono" src="icons/bell-solid.svg" alt="bell">
+                <img class="icono" src="icons/users-solid.svg" alt="user">
+            </div>
+            <div class="menu-navegacion-movil">
+                <img class="icono" src="icons/users-solid.svg" alt="user">
+                <div class="lista-movil">
+                    <img class="icono" src="icons/search-solid.svg" alt="search">
+                    <img class="icono" src="icons/gift-solid.svg" alt="gift">
+                    <img class="icono" src="icons/bell-solid.svg" alt="bell">
                 </div>
             </div>
+        </nav>
+
 </body>
 </html>
