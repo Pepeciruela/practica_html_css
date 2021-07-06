@@ -87,6 +87,7 @@ body{
     display: none;
 }
 
+/*MOVIL*/
 
 @media only screen and (max-width: 768px){
     .logo-navegacion{
@@ -110,6 +111,8 @@ body{
         display: none;
         position: absolute;
         border-radius: 4px;
+        top: 40px;
+        background-color: #000;
     }
 
     .lista-movil>img{
