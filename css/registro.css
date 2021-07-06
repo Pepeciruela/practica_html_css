@@ -14,69 +14,115 @@
     background: linear-gradient(rgba(0,0,0,.15)0%, rgba(0,0,0,.50) 100%) , url(../img/fondo_caballeros.jpg);
     background-position: center center;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
     
 }
 
-.logo {
+.principal > .logo {
     width: 200px;
-    padding: 1.25em;
+    padding: 20px;
 }
 
-.registro{
+.principal > .registro{
     background-color:#273746;
-    border-radius: 8px;
+    border-radius: 4px;
     color:#fff;
     font-size: 16px;
-    margin: 2.5em auto 6.25em;
-    padding: 4.37em 3.75em 4.37em;
-    width: 450px;
+    margin: 40px auto 100px;
+    padding: 70px 60px 70px;
+    width: 30%;
+    height: auto;
     display:block;
 }
 
-.registro h2{
+.principal > .registro > h2{
     font-size: 30px;
-    margin: 0 0 1em;  
+    margin: 0 0 16px;  
 }
 
-.registro input{
-    display:block; /* cada elemento ocupa su espacio correspondiente*/
+.principal > .registro input{
     color:#fff;
-    font-size: 16px;
+    font-weight: bold;
     width: 100%;
-    height: 3.125em;
-    border-radius: 0.5em;
+    height: 40px;
+    border-radius: 4px;
     border: none;
+    padding-left: 12px;
+    
 }
 
-#nombre{
+.principal > .registro input{
     background-color:#566573;
     font-size: 16px;
     outline: none;
-    margin-bottom: 1.25em;
-    padding: 0 1em;  
-}
-
-#password{
-    background-color:#566573;
-    font-size: 16px;
-    outline: none;
-    margin-bottom: 1.25em;
-    padding: 0 1em; 
+    margin-bottom: 20px;
 }
 
 #submit{
     background-color: red;
     font-size: 16px;
-    margin-top: 2.5em;
+    margin-top: 40px;
     cursor: pointer;
-    padding: 0 1em 0 1em; 
 }
 
-.registro .ayuda .Nayuda a{
+.registro > .ayuda {
     color:#fff;
-    font-size: 13 px;
+    margin-top: 12px;
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registro > .ayuda > .Nayuda > a{
+    color:#fff;
     padding: 0;
     display:flex;
     justify-content: space-between;
-    margin-top: 1em;
+    margin-top: 16px;
+}
+
+.registro > .ayuda > .check{
+    margin-top: 16px;
+    display: flex;
+}
+
+.registro > .ayuda > .check input{
+    width: 20px;
+    height: 20px;
+}
+
+/*MOVIL*/
+
+@media only screen and (max-width: 768px){
+
+    .principal > .logo {
+        width: 100px;
+    }
+
+    .principal > .registro{
+        width: 40%;
+        
+    }
+
+    .principal > .registro > h2{
+        font-size: 20px;
+    }
+
+    .registro > .ayuda {
+        display: block;
+        padding-left: 24px;
+    }
+
+    .registro > .ayuda > .check input{
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+    }
+
+    }
+
+
 }

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <title>Registro</title>
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
 </head>
 <body>
     <header class="header">
@@ -18,8 +19,8 @@
             <div class="registro">
                 <h2>Iniciar sesión</h2>
                 <form>
-                    <input type="text" name="name" id="nombre" placeholder="Correo electrónico o teléfono" autocomplete="off">
-                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <input type="text" name="name" placeholder="Correo electrónico o teléfono" autocomplete="off">
+                    <input type="password" name="password" placeholder="Contraseña">
                     <input type="submit" id="submit" value="Iniciar sesión">
                 </form>
                 <div class="ayuda">
@@ -30,36 +31,37 @@
                     <div class="Nayuda">
                         <a href="#">¿Necesitas ayuda?</a>
                     </div>
-                    <div class="registro-bajo">
-                        <a href="#" class="registro2"><img src="icons/facebook.svg" alt="facebook" class="facebook">Iniciar sesión con Facebook</a>
-                        <p class="nuevo">¿Primera vez en Monty Python?<a href="#">Subscribete ya</a></p>
-                    </div>
                 </div>
             </div>
         </div>
     </header>
     <footer class="footer">
-        <ul class="footer-items">
-            <li class="footer-tipo"><a href="#">Audio y subtítulos</a></li>
-            <li class="footer-tipo"><a href="#">Audiodescripción</a></li>
-            <li class="footer-tipo"><a href="#">Centro de ayuda</a></li>
-            <li class="footer-tipo"><a href="#">Tarjeta regalo</a></li>
-            <li class="footer-tipo"><a href="#">Zona de prensa</a></li>
-            <li class="footer-tipo"><a href="#">Inversores</a></li>
-            <li class="footer-tipo"><a href="#">Empleo</a></li>
-            <li class="footer-tipo"><a href="#">Términos de uso</a></li>
-            <li class="footer-tipo"><a href="#">Privacidad</a></li>
-            <li class="footer-tipo"><a href="#">Avisos legales</a></li>
-            <li class="footer-tipo"><a href="#">Preferencias de cookies</a></li>
-            <li class="footer-tipo"><a href="#">Información coorporativa</a></li>
-            <li class="footer-tipo"><a href="#">Contáctanos</a></li>
-        </ul>
-        <select name="idioma" id="idioma">
-            <option value="es">Español</option>
-            <option value="br">Bretón</option>
-            <option value="ni">NI NI NI</option>
-        </select>
-
+        <div class="redes-sociales">
+            <img src="icons/facebook.svg" alt="facebook" class="icono">
+            <img src="icons/instagram.svg" alt="instagram" class="icono">
+            <img src="icons/twitter.svg" alt="twitter" class="icono">
+            <img src="icons/youtube.svg" alt="youtube" class="icono">
+        </div>
+        <div class="informacion-footer">
+            <ul>
+                <li>Audio y subtitulos</li>
+                <li>Descripción de audio</li>
+                <li>Centro de ayuda</li>
+                <li>Tarjetas regalo</li>
+                <li>Zonas de prensa</li>
+                <li>Inversores</li>
+                <li>Empleo</li>
+                <li>Términos de uso</li>
+                <li>Privacidad</li>
+                <li>Avisos legales</li>
+                <li>Preferenica de cookies</li>
+                <li>Información corporativa</li>
+                <li>Contáctanos</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>© 1990-2021 Monty Python S.L.</p>
+        </div>
     </footer>
 </body>
 </html>
