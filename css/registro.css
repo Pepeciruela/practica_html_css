@@ -20,7 +20,7 @@
     
 }
 
-.principal > .logo {
+.principal .enlace img {
     width: 200px;
     padding: 20px;
 }
@@ -123,6 +123,3 @@
     }
 
     }
-
-
-}
