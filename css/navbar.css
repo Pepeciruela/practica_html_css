@@ -34,7 +34,7 @@ body{
 
 }
 
-.logo-navegacion > img{
+.logo-navegacion > .enlace img{
     height: 50px;
 }
 
@@ -51,6 +51,12 @@ body{
 .navegador-navegacion > ul > li{
     display: inline;
     margin-left: 16px;
+}
+
+.navegador-navegacion > ul > li > a{
+    text-decoration: none;
+    color: #ffff;
+
 }
 
 .seleccionado{
