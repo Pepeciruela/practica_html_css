@@ -55,7 +55,7 @@ body{
     border-radius: 4px;
 }
 
-.tarjeta-carrusel > .carrusel-texto{
+.tarjeta-carrusel > a > .carrusel-texto{
     position: absolute;
     top:0;
     width: 100%;
@@ -65,11 +65,14 @@ body{
     padding-top: 20px;
 }
 
-.tarjeta-carrusel > .carrusel-texto >p {
+.tarjeta-carrusel > a > .carrusel-texto >p {
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
+    text-decoration: none;
+    outline: none;
+    color: #ffff;
 }
 
 .tarjeta-carrusel:hover{
@@ -77,7 +80,7 @@ body{
     z-index: 5;
 }
 
-.tarjeta-carrusel:hover > .carrusel-texto{
+.tarjeta-carrusel:hover > a > .carrusel-texto{
     display:block;
     align-items: center;
     font-size: 12px;
