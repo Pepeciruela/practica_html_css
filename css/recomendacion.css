@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #141414;
+    font-family:'Lato', sans-serif;
+    color:white;
+}
+
+.icono{
+    width: 20px;
+    height: 20px;
+    filter:invert(1);
+}
+
+/*RECOMENDACION*/
+
+.main2{
+    position: relative;
+    background: linear-gradient(to bottom, transparent 6vh, #141414 20vh);
+    margin-left: 50px;
+}
+
+.recomendacion-principal > h1 {
+    margin-left: 12px;
+}
+
+.recomendaciones{
+    display:flex;
+    margin-top: 20px;
+    padding: 20px 0;
+    width: 80%;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.tarjeta-recomendacion{
+    margin-left: 12px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.tarjeta-recomendacion > img{
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.tarjeta-recomendacion > .recomendacion-texto{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20,20,20,0.7);
+    display: none;
+    padding-top: 20px;
+}
+
+.tarjeta-recomendacion > .recomendacion-texto >p {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.tarjeta-recomendacion:hover{
+    transform: scale(1.2);
+    z-index: 5;
+}
+
+.tarjeta-recomendacion:hover > .recomendacion-texto{
+    display:block;
+    align-items: center;
+    font-size: 12px;
+}
+
+/*MOVIL*/
+
+@media only screen and (max-width: 768px){
+    .recomendacion-principal > h1 {
+        font-size: 24px;
+    }
+
+    .recomendaciones{
+        margin-top: 0;
+    }
+
+    .tarjeta-recomendacion > img{
+        width: 100px;
+    }
+
+    .tarjeta-recomendacion:hover > .recomendacion-texto{
+        display: none;
+    }
+
+}

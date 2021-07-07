@@ -20,6 +20,7 @@ body{
 .main{
     position: relative;
     background: linear-gradient(to bottom, transparent 6vh, #141414 20vh);
+    margin-left: 50px;
 }
 
 .seccion-principal > h1 {
@@ -82,6 +83,57 @@ body{
     font-size: 12px;
 }
 
+/*CORAZON*/
+
+[type="checkbox"]{
+    margin-top: 300px;
+}
+
+[type="label"]{
+    margin-top: -200px;
+}
+
+[type="checkbox"] + label{
+    position:relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+[type="checkbox"] + label::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top:0;
+}
+
+[type="checkbox"]:checked + label::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top:0;
+    color:white;
+}
+
+[type="checkbox"]:checked + label::after{
+    content: "♥";
+    position: absolute;
+    left: 0;
+    top:0;
+    color:red;
+}
+
+[type="checkbox"]:not(:checked) + label::after{
+    content: "♥";
+    position: absolute;
+    left: 0;
+    top:0;
+    color:white;
+}
+
 /*MOVIL*/
 
 @media only screen and (max-width: 768px){
@@ -92,4 +144,5 @@ body{
     .carrusel{
         margin-top: 0;
     }
+
 }
